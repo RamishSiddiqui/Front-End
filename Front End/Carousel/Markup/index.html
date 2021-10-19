@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Accordion</title>
+	<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+	<script type="text/javascript" src="JS/myscript.js"></script>
+
+</head>
+<body>
+	<button class="accordion" >Article 1</button>
+	<div class="panel">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		</p>
+	</div>
+	<button class="accordion" >Article 2</button>
+	<div class="panel">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		</p>
+	</div>
+	<button class="accordion" >Article 3</button>
+	<div class="panel">
+		<div>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			</p>
+		</div>
+	</div>
+	<hr>
+
+
+<script type="text/javascript">
+
+var x=document.getElementsByClassName("accordion");
+for(i=0 ;i<x.length;i++)
+{
+	x[i].onclick=displayDate;
+}
+function displayDate() {
+	var y=this.nextElementSibling;
+	if(y.style.display==="block")
+	{
+		y.classList.toggle("appear");
+	}
+	else
+	{
+		y.style.display="block";
+		y.style.height="400px";
+		y.style.transition="all 10s";
+		var x=document.getElementsByClassName("accordion");
+		for(i=0;i<x.length;i++)
+		{
+			var z=x[i].nextElementSibling;
+			if(z==y)
+			{}
+			else
+			{
+				z.style.display="none";
+			}
+		}
+	}
+  
+}
+</script>
+</body>
+</html>

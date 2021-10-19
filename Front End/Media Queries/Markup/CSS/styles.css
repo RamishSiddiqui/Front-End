@@ -1,0 +1,284 @@
+
+
+* {
+	box-sizing: border-box;
+}
+header {
+	width: 100%;
+	min-height: 100px;
+	/*background-color: rgb(0,124,248);*/
+	font-family: tahoma;
+}
+@media only screen and (max-width: 736px){
+	header {
+		min-height: 110px;
+	}
+}
+
+#logo {
+	height: 25px;
+	width: 25px;
+	vertical-align: middle;
+}
+#head-left {
+	float: left;
+	padding-top: 38px;
+	font-weight: 500;
+	cursor: pointer;
+	letter-spacing: 2px;
+	width: 50%;
+	text-align: center;
+}
+@media only screen and (max-width: 736px){
+	#head-left {
+		float: none;
+		width: 100%;
+	}
+}
+#head-right {
+	float: right;
+	width: 50%;
+}
+@media only screen and (min-width: 736px)
+{
+	#head-right {
+		display: block !important;
+	}
+
+}
+@media only screen and (max-width: 736px)
+{
+	#head-right {
+		float: none;
+		width: 100%;
+		text-align: center;
+		display: none;
+	}
+	#head-right ul li {
+		float: none;
+		width: 100%;
+	}
+}
+#head-right ul {
+	padding-top: 13px;
+	padding-left: 0;
+	/*padding-right: 140px;*/
+}
+#head-right ul li{
+	float: left;
+	list-style-type: none;
+	padding: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+#head-right ul li:hover {
+	background-color: rgb(220,220,220);
+	transition-duration: 0.5s;
+}
+#head-right ul li a {
+	text-decoration-line: none;
+	color: grey;
+}
+.burger {
+	display: none;
+	cursor: pointer;
+	float: right;
+	padding: 32px 14px;;
+}
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 5px;
+  background-color: grey;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+@media only screen and (max-width: 736px)
+{
+	.burger {
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 10px;
+	}
+}
+#back {
+	background-image: url("../Images/back.jpg");
+	background-repeat: no-repeat;
+	height: 450px;
+	position: relative;
+	width: 100%;
+	display: block;
+	background-size: cover;
+}
+#text1 {
+	color: white;
+	position: absolute;
+	font-size: 40px;
+	font-family: arial;
+	font-weight: 600;
+	text-align: center;
+	max-width: 400px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 30%;
+}
+#text2 {
+	color: grey;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	max-width: 300px;
+	top: 51%;
+	font-size: 18px;
+}
+#text3 {
+	background-color: rgb(124,197,118);
+	position: absolute;
+	max-width: 130px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding: 12px;
+	top: 60%;
+	font-family: arial;
+	color: white;
+	border-radius: 20px;
+	font-size: 12px;
+	font-weight: 600;
+	cursor: pointer;
+}
+#text3:hover {
+	background-color: rgb(100,186,92);
+	transition-duration: 0.5s;
+}
+#last {
+	width: 100%;
+	height: 450px;
+}
+#s1 {
+	background-color: white;
+	width: 100%;
+	height: 175px;
+	margin-bottom: 60px;
+	position: relative;
+}
+#s11 {
+	position: absolute;
+	max-width: 340px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	font-family: arial;
+	font-size: 25px;
+	font-weight: 600;
+	top: 60%;
+}
+#s12 {
+	color: grey;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	max-width: 300px;
+	top: 80%;
+	font-size: 18px;
+}
+#three {
+	font-family: arial;
+	min-height: 300px;
+	padding-left: 14%;
+    padding-right: 14%;
+}
+#three img {
+	width: 70px;
+	height: 70px;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+}
+#s2 {
+	float: left;
+	max-height: 250px;
+	max-width: 300px;
+	box-sizing: border-box;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#s3 {
+	float: left;
+	max-height: 250px;
+	max-width: 300px;
+	box-sizing: border-box;
+	margin: 10px;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+#s4 {
+	float: left;
+	max-height: 250px;
+	max-width: 300px;
+	box-sizing: border-box;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+@media only screen and (max-width: 1125px)
+{
+	#s4 {
+		margin-left: 0%;
+   	 	margin-right: 0%;
+	}
+	#three {
+		padding-left: 0;
+    	padding-right: 0;
+	}
+	#s2 {
+		margin-left: 6%;
+	}
+}
+#s2 div,#s3 div,#s4 div {
+	text-align: center;
+}
+
+#s2 .bold,#s3 .bold,#s4 .bold {
+	font-weight: 800;
+	margin-bottom: 10px;
+}
+#s2 .normal,#s3 .normal,#s4 .normal{
+	color: grey;
+	font-size: 15px;
+}
+@media only screen and (max-width: 930px)
+{
+	#s3 {
+		margin-left: 34%;
+   	 	margin-right: 33%;
+	}
+	#three {
+		padding-left: 0;
+    	padding-right: 0;
+	}
+	#s2 {
+		margin-left: 33.5%;
+    	margin-right: 33.5%;
+	}
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
+}
+#top {
+	position: fixed;
+	bottom: 0;
+	left: 47%;
+}
+html {
+	scroll-behavior: smooth;
+}

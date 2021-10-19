@@ -1,0 +1,161 @@
+@font-face {font-family: "Roboto Slab"; 
+    src: url("../Fonts/Roboto\ Slab/Roboto\ Slab\ Regular.eot"); 
+    src: url("../Fonts/Roboto\ Slab/Roboto\ Slab\ Regular.eot?#iefix") 
+    format("embedded-opentype"), 
+    url("../Fonts/Roboto\ Slab/Roboto\ Slab\ Regular.woff") format("woff"), 
+    url("../Fonts/Roboto\ Slab/Roboto\ Slab\ Regular.ttf") format("truetype")
+}
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,700,300);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body, html, .columnContainer{
+    height: 100%;
+}
+body {
+    background-image: url("../Images/back.png");
+    background-size: 100%;
+}
+
+.columnContainer {
+    display: table;
+    width: 100%;
+}
+
+.columnContainer > section {
+    width: 20%;
+    display: table-cell;
+    -webkit-transition: width 0.3s linear;
+    transition: width 0.3s linear;
+}
+
+.columnContainer:hover > section:hover {
+    width: 40%;
+}
+
+.columnContainer:hover > section {
+    width: 15%;
+}
+
+.columnContainer > section:nth-of-type(1) {
+    background-color: rgba(241,140,100, 0.5);
+}
+.columnContainer > section:nth-of-type(2) {
+    background-color: rgba(100,213,255, 0.5);
+}
+.columnContainer > section:nth-of-type(3) {
+    background-color: rgba(98,137,213, 0.5);
+}
+.columnContainer {
+    section {
+        text-align: center;
+        position: relative;
+        div {
+            display: inline-block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            left: 0;
+            img {
+                height: 100px;
+                width: 100px;
+            }
+            h1 {
+                font-family: 'Nunito', sans-serif;
+            }
+            .buttonDownload {
+                display: inline-block;
+                position: relative;
+                padding: 10px 25px;
+              
+                background-color: #4CC713;
+                color: white;
+              
+                font-family: sans-serif;
+                text-decoration: none;
+                font-size: 0.9em;
+                text-align: center;
+                text-indent: 15px;
+            }
+            
+            .buttonDownload:hover {
+                background-color: #333;
+                color: white;
+            }
+            
+            .buttonDownload:before, .buttonDownload:after {
+                content: ' ';
+                display: block;
+                position: absolute;
+                left: 15px;
+                top: 52%;
+            }
+            
+            /* Download box shape  */
+            .buttonDownload:before {
+                width: 10px;
+                height: 2px;
+                border-style: solid;
+                border-width: 0 2px 2px;
+            }
+            
+            /* Download arrow shape */
+            .buttonDownload:after {
+                width: 0;
+                height: 0;
+                margin-left: 3px;
+                margin-top: -7px;
+              
+                border-style: solid;
+                border-width: 4px 4px 0 4px;
+                border-color: transparent;
+                border-top-color: inherit;
+                
+                animation: downloadArrow 2s linear infinite;
+                animation-play-state: paused;
+            }
+            
+            .buttonDownload:hover:before {
+                border-color: #4CC713;
+            }
+            
+            .buttonDownload:hover:after {
+                border-top-color: #4CC713;
+                animation-play-state: running;
+            }
+            
+            /* keyframes for the download icon anim */
+            @keyframes downloadArrow {
+                /* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
+                0% {
+                    margin-top: -7px;
+                    opacity: 1;
+                }
+                
+                0.001% {
+                    margin-top: -15px;
+                    opacity: 0;
+                }
+                
+                50% {
+                    opacity: 1;
+                }
+                
+                100% {
+                    margin-top: 0;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}

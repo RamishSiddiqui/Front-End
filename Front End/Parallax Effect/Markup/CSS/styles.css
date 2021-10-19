@@ -1,0 +1,96 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: "Lato", sans-serif; }
+
+.img1 {
+  height: 100%;
+  opacity: 0.65;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  background-image: url("../Images/1.jpg"); }
+  .img1 div {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%; }
+  .img1 div span {
+    font-size: 30px;
+    background-color: #282e34;
+    color: white;
+    letter-spacing: 10px;
+    padding: 18px; }
+
+.text1 {
+  padding: 50px; }
+  .text1 div {
+    width: 100%;
+    text-align: center; }
+  .text1 div span {
+    letter-spacing: 10px;
+    font-size: 25px; }
+  .text1 p {
+    text-align: justify;
+    letter-spacing: 2px; }
+
+.img2 {
+  height: 100%;
+  opacity: 0.65;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  background-image: url("../Images/2.jpg");
+  height: 400px; }
+  .img2 div {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%; }
+  .img2 div span {
+    font-size: 30px;
+    background-color: #282e34;
+    color: white;
+    letter-spacing: 10px;
+    padding: 18px; }
+  .img2 div span {
+    background-color: transparent; }
+
+.text2 {
+  padding: 50px;
+  background-color: #282e34; }
+  .text2 p {
+    color: white;
+    letter-spacing: 2px; }
+
+.img3 {
+  height: 100%;
+  opacity: 0.65;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  background-image: url("../Images/3.jpg"); }
+  .img3 div {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%; }
+  .img3 div span {
+    font-size: 30px;
+    background-color: #282e34;
+    color: white;
+    letter-spacing: 10px;
+    padding: 18px; }
+
+.text3 {
+  padding: 50px;
+  background-color: #282e34; }
+  .text3 p {
+    color: white;
+    letter-spacing: 2px; }

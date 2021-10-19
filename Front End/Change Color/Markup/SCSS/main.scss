@@ -1,0 +1,10 @@
+@import "Components/mixin.scss";
+
+button {
+    color: white;
+    $red:red(#00fff2);
+    $green:green(#00fff2);
+    $blue:blue(#00fff2);
+    background-color: rgb($red, $green, $blue);
+    @include hover(black);
+}

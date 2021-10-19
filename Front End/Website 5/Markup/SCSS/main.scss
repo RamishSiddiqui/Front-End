@@ -1,0 +1,216 @@
+@font-face {font-family: "Roboto Slab"; 
+    src: url("../Fonts/Roboto\ Slab/Roboto\ Slab\ Regular.eot"); 
+    src: url("../Fonts/Roboto\ Slab/Roboto\ Slab\ Regular.eot?#iefix") 
+    format("embedded-opentype"), 
+    url("../Fonts/Roboto\ Slab/Roboto\ Slab\ Regular.woff") format("woff"), 
+    url("../Fonts/Roboto\ Slab/Roboto\ Slab\ Regular.ttf") format("truetype")
+}
+// @font-face {
+//     font-family: "RobotoLight";
+//     src: url("../Fonts/Roboto/Roboto-Light.ttf") format("truetype")
+// }
+// @font-face {
+//     font-family: "RobotoRegular";
+//     src: url("../Fonts/Roboto/Roboto-Regular.ttf") format("truetype")
+// }
+.container {
+    width: 85%;
+}
+.navbar-fixed {
+    nav {
+        background-color: #f5b72f;
+    }
+    .nav-wrapper  {
+        form {
+            margin: 0px 0px 0px 20px;
+            width: 190px;
+            display: inline-block;
+            height: 30px;
+            vertical-align: super;
+            input {
+                margin: 0;
+            }
+            .input-field {
+                .label-icon {
+                    top: -15px;
+                }
+            }
+        }
+        .input-field input[type=search] {
+            max-width: 160px;
+            padding-left: 2.5rem;
+        }
+        ul {
+            display: inline-block;
+            vertical-align: top;
+            li {
+                float: none;
+                display: inline-block;
+                a {
+                    color: black;
+                    height: 50px;
+                    padding: 0;
+                    margin: 0 15px;
+                }
+            }
+        }
+        .right {
+            height: 64px;
+            li {
+                height: 64px;
+                i {
+                    font-size: 20px;
+                    margin: 0px 5px;
+                    color: #5c5c5c;
+                }
+            }
+        }
+        .brand-logo {
+            position: relative;
+        }
+    }
+}
+.img {
+    .responsive-img {
+        width: 100%;
+    }
+}
+.articles {
+    background-color: #e5e5e5;
+    padding: 50px 0px 0px 0px;
+    .row {
+        border-radius: 6px;
+        .col {
+            .search {
+                background-color: white;
+                .col {
+                    margin: 1rem 0rem;
+                    .validate {
+                        position: relative;
+                    }
+                    .fa {
+                        position: absolute;
+                        right: 16px;
+                        top: 30%;
+                        color: #5c5c5c;
+                    }
+                }
+                .btn-large {
+                    background-color: #06ace3;
+                    float: right;
+                    padding: 0 55px;
+                }
+            }
+        }
+    }
+    .result {
+        font-family: "Roboto";
+        font-weight: 300px;
+        font-size: 12px;
+        color: #3c4858;
+        .myright {
+            text-align: right;
+            p {
+                display: inline-block;
+                color: #3c4858;
+            }
+            .fa-sort-down {
+                font-size: 20px;
+                padding: 0 5px;
+            }
+            .fa-sort-up {
+                vertical-align: -webkit-baseline-middle;
+                font-size: 20px;
+                padding: 0 5px;
+            }
+        }
+    }
+    .article-list {
+        .card {
+            background-color: white;
+            .card-image {
+                width: 85%;
+                left: 8%;
+                top: -20px;
+                img {
+                    border-radius: 10px 10px 10px 10px;
+                }
+                .card-title {
+                    font-family: "Roboto Slab";
+                    font-size: 18px;
+                    padding: 10px 16px;
+                    width: -webkit-fill-available;
+                    background-color: #f5b72f;
+                    border-radius: 0px 0px 10px 10px;
+                }
+            }
+            .coll {
+                padding: 0px 0px 0px 50px;
+                font-family: "Roboto";
+                font-weight: 300;
+                font-size: 14px;
+                color: #999999;
+                .collapsible {
+                    max-width: 290px;
+                    border: none;
+                    margin: 0;
+                    box-shadow: none;
+                    li {
+                        margin: 0px 0px 25px 0px;
+                        .collapsible-body {
+                            font-size: 12px;
+                            padding: 1rem 0;
+                        }
+                    }
+                    .collapsible-header {
+                        padding: 0;
+                    }
+                }
+                .collapsible li.active i {
+                    transform: rotate(180deg);
+                }
+            }
+            .info {
+                padding: 0px 0px 0px 25px;
+                margin: 0px 0px 8px;
+                span {
+                    font-family: "Roboto";
+                    font-weight: 300;
+                    font-size: 14px;
+                    color: #999999;
+                }
+            }
+            .route {
+                padding: 0px 0px 0px 38px;
+                font-family: "Roboto";
+                font-size: 14px;
+                color: #999999;
+                .to {
+                    font-weight: 300;
+                    text-align: center;
+                }
+            }
+            .datebutton {
+                padding: 0px 30px 15px 25px;
+                .btn-large {
+                    background-color: #06ace3;
+                    padding: 0 30px;
+                    font-family: "Roboto";
+                    font-size: 12px;
+                }
+                span {
+                    color: #06ace3;
+                    font-family: "Roboto";
+                    font-size: 13px;
+                    vertical-align: sub;
+                }
+            }
+        }
+    }
+}
+.active {
+    background-color: rgba(0, 0, 0, 0) !important;
+    a {
+        border-bottom: 4px solid #06ace3;
+    }
+}

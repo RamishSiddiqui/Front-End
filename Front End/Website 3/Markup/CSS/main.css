@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'Lato_Bold';
+  src: url("../Fonts/Lato Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("../Fonts/Lato Bold.eot?#iefix") format("embedded-opentype"), url("../Fonts/Lato Bold.woff") format("woff"), url("../Fonts/Lato Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Lato_Regular';
+  src: url("../Fonts/Lato Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../Fonts/Lato Regular.eot?#iefix") format("embedded-opentype"), url("../Fonts/Lato Regular.woff") format("woff"), url("../Fonts/Lato Regular.ttf") format("truetype"); }
+
+html, body {
+  font-family: Lato_Bold; }
+
+.main {
+  height: 100%;
+  width: 100%;
+  position: relative; }
+  .main .img1 img {
+    position: absolute;
+    height: 200px;
+    width: 350px;
+    right: 0;
+    top: 0; }
+  .main .img2 img {
+    position: absolute;
+    height: 560px;
+    width: 650px;
+    left: 0;
+    z-index: -1;
+    bottom: 0; }
+  .main .img3 img {
+    position: absolute;
+    width: 530px;
+    right: 0;
+    top: 270px; }
+
+.navbar {
+  min-height: 90px;
+  background-color: transparent; }
+  .navbar .navbar-toggle {
+    border: 1px solid white; }
+  .navbar .icon-bar {
+    background-color: white; }
+  .navbar .navbar-brand {
+    margin: 12px 0 0 0; }
+  .navbar .navbar-collapse ul {
+    margin: 25px 0 0 0; }
+    .navbar .navbar-collapse ul li {
+      margin: 0px 30px 0px 30px; }
+  .navbar .navbar-collapse .navbar-nav a {
+    font-size: 16px;
+    padding: 6px 16px;
+    color: #4a5d8b;
+    text-align: center; }
+    .navbar .navbar-collapse .navbar-nav a:hover, .navbar .navbar-collapse .navbar-nav a:active, .navbar .navbar-collapse .navbar-nav a:focus {
+      background-color: #b3eaff;
+      border-radius: 10px; }
+
+.content {
+  max-width: 360px;
+  display: inline-block;
+  margin: 120px 0px 0px 0px; }
+  .content h1 {
+    margin: 70px 0px 20px 60px;
+    color: #4a5d8b; }
+  .content p {
+    margin: 0px 0px 0px 60px;
+    color: #4a5d8b;
+    font-family: Lato_Regular; }
+  .content .button {
+    padding: 6px 16px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    color: #4a5d8b;
+    font-size: 13px;
+    margin: 20px 0px 0px 60px; }

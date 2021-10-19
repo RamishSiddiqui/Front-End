@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hamburger Menu</title>
+	<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+</head>
+<body>
+	<header>
+		<div class="burger">
+			<div></div>
+		</div>
+		<div class="login"><a href="#">LOGIN</a></div>
+		<div class="join"><a href="#">JOIN</a></div>
+		<div><img src="Images/mail.png"></div>
+	</header>
+	<div class="menu">
+		<ul>
+			<li><a href="#">HOME</a</li>
+			<li><a href="#">PRODUCTS & PRICING</a></li>
+			<li><a href="#">RESOURCES & EVENTS</a></li>
+		</ul>
+	</div>
+	<form>
+  <fieldset>
+    <legend>Personalia:</legend>
+    Name: <input type="text" size="30"><br>
+    Email: <input type="text" size="30"><br>
+    Date of birth: <input type="text" size="10">
+  </fieldset>
+</form>
+	<script type="text/javascript">
+		var x=document.getElementsByClassName("burger");
+		x[0].onclick=showmenu;
+		function show() {
+			var y=document.getElementsByClassName("burger");
+			y[0].classList.toggle("chen");
+		}
+		function showmenu() {
+			var y=document.getElementsByClassName("menu");
+			y[0].classList.toggle("change");
+			show();
+		}
+		// var x=document.getElementsByClassName("burger");
+		// x[0].onclick=showmenu;
+		// function showmenu() {
+		// 	var y=document.getElementById("menu");
+		// 	if (y.style.display=="block") {
+		// 		y.style.display="none";
+		// 		x[0].style.marginRight="0px";
+		// 	}else {
+		// 		y.style.display="block";
+		// 		x[0].style.marginRight="231px";
+		// 	}
+		// }
+	</script>
+</body>
+</html>

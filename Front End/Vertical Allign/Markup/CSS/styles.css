@@ -1,0 +1,40 @@
+img {
+	height: 20px;
+	width: 20px;
+}
+img.a {
+	vertical-align: baseline;
+}
+img.b {
+	vertical-align: sub;
+}
+img.c {
+	vertical-align: super;
+}
+img.d {
+	vertical-align: top;
+}
+img.e {
+	vertical-align: text-top;
+}
+img.f {
+	vertical-align: middle;
+}
+img.g {
+	vertical-align: bottom;
+}
+img.h {
+	vertical-align: text-bottom;
+}
+img.i {
+	vertical-align: initial;
+}
+img.j {
+	vertical-align: inherit;
+}
+img.k {
+	vertical-align: baseline;
+}
+img.l {
+	vertical-align: baseline;
+}

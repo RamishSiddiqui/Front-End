@@ -1,0 +1,52 @@
+* {
+	box-sizing: border-box;
+}
+.myslide {
+	display: none;
+}
+img {
+	vertical-align: middle;
+}
+.container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+.number {
+	color: white;
+	font-size: 20px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+#prev,#next {
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 20px;
+	font-weight: bold;
+	color: white;
+	border-radius: 0px 3px 3px 0px;
+	transition: 1s ease;
+}
+#prev:hover , #next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+#next {
+	right: 0; 
+	border-radius: 3px 0px 0px 3px;
+}
+#mas {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+.myslide {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Accordion</title>
+	<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+
+</head>
+<body>
+	<div id="chat-min">
+		<img src="Images/online.png">
+		<div id="text">
+			Chat with me
+		</div>
+	</div>
+
+	<div id="chat-max">
+		<header id="head">
+			<img src="Images/online.png">
+			<div id="text">
+				Chat with me
+			</div>
+		</header>
+		<div id="mess">
+			<div>
+				<textarea placeholder="Type Message..."></textarea>
+			</div>
+		</div>
+	</div>
+
+	<div class="a"></div>
+	<div class="b"></div>
+	<div class="c"></div>
+	<div class="d"></div>
+	<div class="e"></div>
+	<div class="f"></div>
+	<div></div>
+	<div></div>
+	<div></div>
+
+<script type="text/javascript">
+	var x=document.getElementById("chat-min");
+	var y=document.getElementById("head");
+	x.onclick=show;
+	y.onclick=hide;
+
+	function show() {
+		var x=document.getElementById("chat-min");
+		var y=document.getElementById("chat-max");
+		x.style.display="none";
+		y.style.display="block";
+	}
+	function hide() {
+		var x=document.getElementById("chat-min");
+		var y=document.getElementById("chat-max");
+		x.style.display="block";
+		y.style.display="none";
+	}
+</script>
+	
+
+</body>
+</html>

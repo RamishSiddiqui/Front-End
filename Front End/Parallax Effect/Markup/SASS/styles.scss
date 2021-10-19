@@ -1,0 +1,45 @@
+@import 'Components/colorcodes';
+@import 'Components/mixin';
+html,body {
+	height: 100%;
+	margin: 0;
+	font-family: "Lato", sans-serif;
+}
+
+.img1 {
+	@include images;
+	background-image: url("../Images/1.jpg");
+}
+.text1 {
+	padding: 50px;
+	div {
+		width: 100%;
+		text-align: center;
+	}
+	div span {
+		letter-spacing: 10px;
+		font-size: 25px;
+	}
+	p {
+		text-align: justify;
+		letter-spacing: 2px;
+	}
+}
+.img2 {
+	@include images;
+	background-image: url("../Images/2.jpg");
+	height: 400px;
+	div span {
+		background-color:transparent;
+	}
+}
+.text2 {
+	@include textp;
+}
+.img3 {
+	@include images;
+	background-image:url("../Images/3.jpg");
+}
+.text3 {
+	@include textp;
+}

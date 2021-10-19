@@ -1,0 +1,111 @@
+@import "components/_variables.scss";
+
+@mixin no-list-style(){
+	list-style-type: none;
+}
+
+@mixin header-border(){
+	border-top: 6px solid $deyork;
+}
+
+@mixin nav-padding($px){
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+@mixin nav-hover(){
+	background-color: $deyork;
+	border-radius: 6px;
+	text-decoration: none;
+}
+@mixin label-style(){
+	border-bottom: 1px solid $tundora;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	margin: 0;
+}
+@mixin section-hover(){
+	border:5px solid $deyork;
+	img{
+		border:none;
+	}
+	.img-overlay{
+		display: none;
+	}
+}
+@mixin slider-btn-style(){
+	border-radius: 5px;
+	background-color: $deyork;
+	color: white;
+	font: $nav-font;
+	border-style: none;
+	padding: 10px;
+}
+
+@mixin item1-padding(){
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-top: 20px;
+	padding-bottom: 25px;
+}
+@mixin item1-hover(){
+	background-color: $deyork;
+	cursor: pointer;
+	p,a{
+		color: $white;
+		text-decoration: none;
+	}
+	img{
+		content: url("../images/on_hover.png");
+	}
+	span{
+		color: black;
+	}
+	
+}
+@mixin circle-border(){
+	margin: 10px;
+    border:25px solid $dusty-gray;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+}
+
+@mixin section1-border(){
+	border:5px solid white;
+}
+
+@mixin footer-padding(){
+	padding: 25px 0;
+}
+
+@mixin img-overlay-style(){
+	padding-bottom: 10px;
+	padding-top: 10px;
+	text-transform: uppercase;
+	font: $overlay-font;
+	background-color: $cod-gray;
+	color: $white;
+	border:5px solid $white;
+	border-top: none;
+}
+
+@mixin circle-img-text-style(){
+	color: $white;
+	font: 26px Georgia;
+}
+@mixin laptop(){
+	@media only screen and (max-width : 1023px) {
+      
+ }
+}
+@mixin mobiles(){
+	 @media only screen and (max-width: 767px){ 
+  	blog1{
+  		width: 100%
+  	}
+ }
+}
+ 

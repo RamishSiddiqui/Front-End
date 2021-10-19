@@ -1,0 +1,10 @@
+@mixin hover($bcolor) {
+    &:hover {
+        background-color: lighten($bcolor,50%);
+    }
+}
+
+@mixin rgba-background($hexcolor, $opacity) {
+    background-color: $hexcolor;
+    background-color: rgba($hexcolor, $opacity); 
+  }

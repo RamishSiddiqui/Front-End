@@ -1,0 +1,161 @@
+@font-face {
+  font-family: "Roboto Slab";
+  src: url("../Fonts/Roboto Slab/Roboto Slab Regular.eot");
+  src: url("../Fonts/Roboto Slab/Roboto Slab Regular.eot?#iefix") format("embedded-opentype"), url("../Fonts/Roboto Slab/Roboto Slab Regular.woff") format("woff"), url("../Fonts/Roboto Slab/Roboto Slab Regular.ttf") format("truetype"); }
+
+.container {
+  width: 85%; }
+
+.navbar-fixed nav {
+  background-color: #f5b72f; }
+
+.navbar-fixed .nav-wrapper form {
+  margin: 0px 0px 0px 20px;
+  width: 190px;
+  display: inline-block;
+  height: 30px;
+  vertical-align: super; }
+  .navbar-fixed .nav-wrapper form input {
+    margin: 0; }
+  .navbar-fixed .nav-wrapper form .input-field .label-icon {
+    top: -15px; }
+
+.navbar-fixed .nav-wrapper .input-field input[type=search] {
+  max-width: 160px;
+  padding-left: 2.5rem; }
+
+.navbar-fixed .nav-wrapper ul {
+  display: inline-block;
+  vertical-align: top; }
+  .navbar-fixed .nav-wrapper ul li {
+    float: none;
+    display: inline-block; }
+    .navbar-fixed .nav-wrapper ul li a {
+      color: black;
+      height: 50px;
+      padding: 0;
+      margin: 0 15px; }
+
+.navbar-fixed .nav-wrapper .right {
+  height: 64px; }
+  .navbar-fixed .nav-wrapper .right li {
+    height: 64px; }
+    .navbar-fixed .nav-wrapper .right li i {
+      font-size: 20px;
+      margin: 0px 5px;
+      color: #5c5c5c; }
+
+.navbar-fixed .nav-wrapper .brand-logo {
+  position: relative; }
+
+.img .responsive-img {
+  width: 100%; }
+
+.articles {
+  background-color: #e5e5e5;
+  padding: 50px 0px 0px 0px; }
+  .articles .row {
+    border-radius: 6px; }
+    .articles .row .col .search {
+      background-color: white; }
+      .articles .row .col .search .col {
+        margin: 1rem 0rem; }
+        .articles .row .col .search .col .validate {
+          position: relative; }
+        .articles .row .col .search .col .fa {
+          position: absolute;
+          right: 16px;
+          top: 30%;
+          color: #5c5c5c; }
+      .articles .row .col .search .btn-large {
+        background-color: #06ace3;
+        float: right;
+        padding: 0 55px; }
+  .articles .result {
+    font-family: "Roboto";
+    font-weight: 300px;
+    font-size: 12px;
+    color: #3c4858; }
+    .articles .result .myright {
+      text-align: right; }
+      .articles .result .myright p {
+        display: inline-block;
+        color: #3c4858; }
+      .articles .result .myright .fa-sort-down {
+        font-size: 20px;
+        padding: 0 5px; }
+      .articles .result .myright .fa-sort-up {
+        vertical-align: -webkit-baseline-middle;
+        font-size: 20px;
+        padding: 0 5px; }
+  .articles .article-list .card {
+    background-color: white; }
+    .articles .article-list .card .card-image {
+      width: 85%;
+      left: 8%;
+      top: -20px; }
+      .articles .article-list .card .card-image img {
+        border-radius: 10px 10px 10px 10px; }
+      .articles .article-list .card .card-image .card-title {
+        font-family: "Roboto Slab";
+        font-size: 18px;
+        padding: 10px 16px;
+        width: -webkit-fill-available;
+        background-color: #f5b72f;
+        border-radius: 0px 0px 10px 10px; }
+    .articles .article-list .card .coll {
+      padding: 0px 0px 0px 50px;
+      font-family: "Roboto";
+      font-weight: 300;
+      font-size: 14px;
+      color: #999999; }
+      .articles .article-list .card .coll .collapsible {
+        max-width: 290px;
+        border: none;
+        margin: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none; }
+        .articles .article-list .card .coll .collapsible li {
+          margin: 0px 0px 25px 0px; }
+          .articles .article-list .card .coll .collapsible li .collapsible-body {
+            font-size: 12px;
+            padding: 1rem 0; }
+        .articles .article-list .card .coll .collapsible .collapsible-header {
+          padding: 0; }
+      .articles .article-list .card .coll .collapsible li.active i {
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg); }
+    .articles .article-list .card .info {
+      padding: 0px 0px 0px 25px;
+      margin: 0px 0px 8px; }
+      .articles .article-list .card .info span {
+        font-family: "Roboto";
+        font-weight: 300;
+        font-size: 14px;
+        color: #999999; }
+    .articles .article-list .card .route {
+      padding: 0px 0px 0px 38px;
+      font-family: "Roboto";
+      font-size: 14px;
+      color: #999999; }
+      .articles .article-list .card .route .to {
+        font-weight: 300;
+        text-align: center; }
+    .articles .article-list .card .datebutton {
+      padding: 0px 30px 15px 25px; }
+      .articles .article-list .card .datebutton .btn-large {
+        background-color: #06ace3;
+        padding: 0 30px;
+        font-family: "Roboto";
+        font-size: 12px; }
+      .articles .article-list .card .datebutton span {
+        color: #06ace3;
+        font-family: "Roboto";
+        font-size: 13px;
+        vertical-align: sub; }
+
+.active {
+  background-color: rgba(0, 0, 0, 0) !important; }
+  .active a {
+    border-bottom: 4px solid #06ace3; }

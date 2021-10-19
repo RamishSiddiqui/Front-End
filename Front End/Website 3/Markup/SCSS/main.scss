@@ -1,0 +1,115 @@
+@import "variables.scss";
+@font-face {
+	font-family: 'Lato_Bold';
+  	src: url('../Fonts/Lato\ Bold.eot'); /* IE9 Compat Modes */
+  	src: url('../Fonts/Lato\ Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       	 url('../Fonts/Lato\ Bold.woff') format('woff'), /* Modern Browsers */
+      	 url('../Fonts/Lato\ Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+@font-face {
+	font-family: 'Lato_Regular';
+  	src: url('../Fonts/Lato\ Regular.eot'); /* IE9 Compat Modes */
+  	src: url('../Fonts/Lato\ Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       	 url('../Fonts/Lato\ Regular.woff') format('woff'), /* Modern Browsers */
+      	 url('../Fonts/Lato\ Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+html,body {
+    font-family: Lato_Bold;
+    // background: url(../Images/1.png) no-repeat,
+    // url(../Images/2.png) no-repeat,
+    // url(../Images/people.png) no-repeat;
+    // background-size: 350px 200px,750px 560px,530px;
+    // background-attachment: fixed;
+    // background-position: right top,bottom left,750px 270px;
+}
+.main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    .img1 {
+        img {
+            position: absolute;
+            height: 200px;
+            width: 350px;
+            right: 0;
+            top: 0;
+        }
+    }
+    .img2 {
+        img {
+            position: absolute;
+            height: 560px;
+            width: 650px;
+            left: 0;
+            z-index: -1;
+            bottom: 0;
+        }
+    }
+    .img3 {
+        img {
+            position: absolute;
+            width: 530px;
+            right: 0;
+            top: 270px;
+        }
+    }
+}
+.navbar {
+    min-height: 90px;
+    background-color: transparent;
+    .navbar-toggle {
+        border: 1px solid white;
+    }
+    .icon-bar {
+        background-color: white;
+    }   
+    .navbar-brand {
+        margin: 12px 0 0 0;
+    }
+    .navbar-collapse {
+        ul {
+            margin: 25px 0 0 0;
+            li {
+                margin: 0px 30px 0px 30px;
+            }
+        }
+        .navbar-nav {
+            a {
+                font-size: 16px;
+                padding: 6px 16px;
+                color: $lightblue;
+                text-align: center;
+                &:hover ,
+                &:active ,
+                &:focus{
+                    background-color: $lightgreen;
+                    border-radius: 10px;
+                }
+
+            }
+        }
+    }
+}
+.content {
+    max-width: 360px;
+    display: inline-block;
+     margin: 120px 0px 0px 0px;
+    h1 {
+        margin: 70px 0px 20px 60px;
+        color: $lightblue;
+    }
+    p {
+        margin: 0px 0px 0px 60px;
+        color: $lightblue;
+        font-family: Lato_Regular;
+    }
+    .button {
+        padding: 6px 16px;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        color: $lightblue;
+        font-size: 13px;
+        margin: 20px 0px 0px 60px;
+    }
+}

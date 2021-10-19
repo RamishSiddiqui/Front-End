@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/materialize.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="JavaScript/bin/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+    <title>Materialize</title>
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo"><img src="Images/logo.png" alt=""></a>
+                <form>
+                    <div class="input-field">
+                        <input id="search" type="search" required>
+                        <label class="label-icon" for="search"><img src="Images/search.png" alt=""></label>
+                    </div>
+                </form>
+                <ul id="nav-mobile" class="center hide-on-med-and-down">
+                    <li class="active"><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">PRODUCTS</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+                <ul class="right">
+                    <li><a href="#"><img src="Images/lock.png" alt=""></a></li>
+                    <li><i class="fa fa-twitter"></i></li>
+                    <li><i class="fa fa-facebook-square"></i></li>
+                    <li><i class="fa fa-instagram"></i></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="img">
+        <img src="Images/back.jpg" alt="" class="responsive-img">
+    </div>
+    <div class="articles">
+        <div class="container">
+            <div class="row">
+                <div class="col m12 center">
+                    <div class="row search z-depth-3">
+                        <div class="input-field col m3">
+                            <input placeholder="Search by Flight" id="flight" type="text" class="validate">
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="input-field col m3">
+                            <input placeholder="Search by Airport" id="airport" type="text" class="validate">
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="input-field col m3">
+                            <input placeholder="Search by Luggage" id="luggage" type="text" class="validate">
+                            <i class="fa fa-chevron-down"></i>
+                        </div>
+                        <div class="col m3">
+                            <button class="btn-large waves-effect waves-teal">Apply Filter</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row result">
+                <div class="col s6">
+                    <p>Showing 12 ads from Islamabad International Airport</p>
+                </div>
+                <div class="col s6 myright">
+                    <p>12 of 136</p>
+                    <i class="fa fa-sort-down"></i>
+                    <i class="fa fa-sort-up"></i>
+                </div>
+            </div>
+            <div class="row article-list">
+                <div class="col m4">
+                    <div class="card">
+                        <div class="row">
+                            <div class="card-image">
+                                <img src="Images/ar1.jpg" class="z-depth-4">
+                                <span class="card-title">Card Title</span>
+                            </div>
+                        </div>
+                        <div class="row info">
+                            <div class="col s12">
+                                <span>Flying from</span>
+                            </div>
+                        </div>
+                        <div class="row route">
+                            <div class="col s4 from">
+                                <span>ISLAMABAD</span>
+                            </div>
+                            <div class="col s4 to">
+                                <span>to</span>
+                            </div>
+                            <div class="col s4 desti">
+                                <span>ISTANBUL</span>
+                            </div>
+                        </div>
+                        <div class="row coll">
+                            <ul class="collapsible" data-collapsible="accordion">
+                                <li>
+                                    <div class="collapsible-header">
+                                        <span>Price Details</span>
+                                        <i class="material-icons right">expand_more</i>
+                                    </div>
+                                    <div class="collapsible-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header">
+                                        <span>Price Details</span>
+                                        <i class="material-icons right">expand_more</i>
+                                    </div>
+                                    <div class="collapsible-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row datebutton">
+                            <div class="col s6">
+                                <span>
+                                    Valid till: 9 Dec 2018
+                                </span>
+                            </div>
+                            <div class="col s6">
+                                <button class="btn-large waves-effect waves-teal">WANT TO BID</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m4">
+                    <div class="card">
+                        <div class="row">
+                            <div class="card-image">
+                                <img src="Images/ar1.jpg" class="z-depth-4">
+                                <span class="card-title">Card Title</span>
+                            </div>
+                        </div>
+                        <div class="row info">
+                            <div class="col s12">
+                                <span>Flying from</span>
+                            </div>
+                        </div>
+                        <div class="row route">
+                            <div class="col s4 from">
+                                <span>ISLAMABAD</span>
+                            </div>
+                            <div class="col s4 to">
+                                <span>to</span>
+                            </div>
+                            <div class="col s4 desti">
+                                <span>ISTANBUL</span>
+                            </div>
+                        </div>
+                        <div class="row coll">
+                            <ul class="collapsible" data-collapsible="accordion">
+                                <li>
+                                    <div class="collapsible-header">
+                                        <span>Price Details</span>
+                                        <i class="material-icons right">expand_more</i>
+                                    </div>
+                                    <div class="collapsible-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header">
+                                        <span>Price Details</span>
+                                        <i class="material-icons right">expand_more</i>
+                                    </div>
+                                    <div class="collapsible-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row datebutton">
+                            <div class="col s6">
+                                <span>
+                                    Valid till: 9 Dec 2018
+                                </span>
+                            </div>
+                            <div class="col s6">
+                                <button class="btn-large waves-effect waves-teal">WANT TO BID</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m4">
+                    <div class="card">
+                        <div class="row">
+                            <div class="card-image">
+                                <img src="Images/ar1.jpg" class="z-depth-4">
+                                <span class="card-title">Card Title</span>
+                            </div>
+                        </div>
+                        <div class="row info">
+                            <div class="col s12">
+                                <span>Flying from</span>
+                            </div>
+                        </div>
+                        <div class="row route">
+                            <div class="col s4 from">
+                                <span>ISLAMABAD</span>
+                            </div>
+                            <div class="col s4 to">
+                                <span>to</span>
+                            </div>
+                            <div class="col s4 desti">
+                                <span>ISTANBUL</span>
+                            </div>
+                        </div>
+                        <div class="row coll">
+                            <ul class="collapsible" data-collapsible="accordion">
+                                <li>
+                                    <div class="collapsible-header">
+                                        <span>Price Details</span>
+                                        <i class="material-icons right">expand_more</i>
+                                    </div>
+                                    <div class="collapsible-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header">
+                                        <span>Price Details</span>
+                                        <i class="material-icons right">expand_more</i>
+                                    </div>
+                                    <div class="collapsible-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row datebutton">
+                            <div class="col s6">
+                                <span>
+                                    Valid till: 9 Dec 2018
+                                </span>
+                            </div>
+                            <div class="col s6">
+                                <button class="btn-large waves-effect waves-teal">WANT TO BID</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row article-list">
+                <div class="col m4">
+                    <div class="card">
+                        <div class="row">
+                            <div class="card-image">
+                                <img src="Images/ar1.jpg" class="z-depth-4">
+                                <span class="card-title">Card Title</span>
+                            </div>
+                        </div>
+                        <div class="row info">
+                            <div class="col s12">
+                                <span>Flying from</span>
+                            </div>
+                        </div>
+                        <div class="row route">
+                            <div class="col s4 from">
+                                <span>ISLAMABAD</span>
+                            </div>
+                            <div class="col s4 to">
+                                <span>to</span>
+                            </div>
+                            <div class="col s4 desti">
+                                <span>ISTANBUL</span>
+                            </div>
+                        </div>
+                        <div class="row coll">
+                            <ul class="collapsible" data-collapsible="accordion">
+                                <li>
+                                    <div class="collapsible-header">
+                                        <span>Price Details</span>
+                                        <i class="material-icons right">expand_more</i>
+                                    </div>
+                                    <div class="collapsible-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header">
+                                        <span>Price Details</span>
+                                        <i class="material-icons right">expand_more</i>
+                                    </div>
+                                    <div class="collapsible-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row datebutton">
+                            <div class="col s6">
+                                <span>
+                                    Valid till: 9 Dec 2018
+                                </span>
+                            </div>
+                            <div class="col s6">
+                                <button class="btn-large waves-effect waves-teal">WANT TO BID</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m4">
+                    <div class="card">
+                        <div class="row">
+                            <div class="card-image">
+                                <img src="Images/ar1.jpg" class="z-depth-4">
+                                <span class="card-title">Card Title</span>
+                            </div>
+                        </div>
+                        <div class="row info">
+                            <div class="col s12">
+                                <span>Flying from</span>
+                            </div>
+                        </div>
+                        <div class="row route">
+                            <div class="col s4 from">
+                                <span>ISLAMABAD</span>
+                            </div>
+                            <div class="col s4 to">
+                                <span>to</span>
+                            </div>
+                            <div class="col s4 desti">
+                                <span>ISTANBUL</span>
+                            </div>
+                        </div>
+                        <div class="row coll">
+                            <ul class="collapsible" data-collapsible="accordion">
+                                <li>
+                                    <div class="collapsible-header">
+                                        <span>Price Details</span>
+                                        <i class="material-icons right">expand_more</i>
+                                    </div>
+                                    <div class="collapsible-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header">
+                                        <span>Price Details</span>
+                                        <i class="material-icons right">expand_more</i>
+                                    </div>
+                                    <div class="collapsible-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row datebutton">
+                            <div class="col s6">
+                                <span>
+                                    Valid till: 9 Dec 2018
+                                </span>
+                            </div>
+                            <div class="col s6">
+                                <button class="btn-large waves-effect waves-teal">WANT TO BID</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col m4">
+                    <div class="card">
+                        <div class="row">
+                            <div class="card-image">
+                                <img src="Images/ar1.jpg" class="z-depth-4">
+                                <span class="card-title">Card Title</span>
+                            </div>
+                        </div>
+                        <div class="row info">
+                            <div class="col s12">
+                                <span>Flying from</span>
+                            </div>
+                        </div>
+                        <div class="row route">
+                            <div class="col s4 from">
+                                <span>ISLAMABAD</span>
+                            </div>
+                            <div class="col s4 to">
+                                <span>to</span>
+                            </div>
+                            <div class="col s4 desti">
+                                <span>ISTANBUL</span>
+                            </div>
+                        </div>
+                        <div class="row coll">
+                            <ul class="collapsible" data-collapsible="accordion">
+                                <li>
+                                    <div class="collapsible-header">
+                                        <span>Price Details</span>
+                                        <i class="material-icons right">expand_more</i>
+                                    </div>
+                                    <div class="collapsible-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collapsible-header">
+                                        <span>Price Details</span>
+                                        <i class="material-icons right">expand_more</i>
+                                    </div>
+                                    <div class="collapsible-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row datebutton">
+                            <div class="col s6">
+                                <span>
+                                    Valid till: 9 Dec 2018
+                                </span>
+                            </div>
+                            <div class="col s6">
+                                <button class="btn-large waves-effect waves-teal">WANT TO BID</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('.collapsible').collapsible();
+        });
+    </script>
+</body>
+
+</html>

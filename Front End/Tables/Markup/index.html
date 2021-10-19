@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Accordion</title>
+	<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+	<script type="text/javascript" src="JS/myscript.js"></script>
+
+</head>
+<body>
+	<table>
+		<tr>
+			<th>
+				Ausfuhrungsart<br>(keine Angabe bedeutet Standard)
+			</th>
+			<th>
+				Weisungsschlussel<br>(Weisungen fur Kreditinstitut)
+			</th>
+			<th>
+				71:Entgeltregelung (keine Angabe bedeu-tet,,0''. Im EWR in EWR-Wahrungen ohne Wahrungsumrech-nung nut ,,0'' zulassig)
+			</th>
+			<th>
+				Bei Zahlungen zu Lasten Wahrungs-konto Entgekte zu Lasten
+			</th>
+		</tr>
+		<tr id="sp">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>0 = Standard (SWIFT)</td>
+			<td>1 = Avis an Bank des Begunstigten</td>
+			<td rowspan="3">0 = Gebuhrenteilung (SHA) eigenes Entgelt z.L kontoinhaber fremdes Entgelt z.L Begunstigten</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>1 = Eilig (SWIFT)</td>
+			<td>2 = Telefonavis an den Begunstigten</td>
+			<td>1 = Euro-Konto</td>
+		</tr>
+		<tr>
+			<td>2 = Scheckziehung</td>
+			<td>3 = Telex/Fax-Avis an den Begunstigten</td>
+			<td>2 = Wahrunskonto</td>
+		</tr>
+		<tr>
+			<td>3 = Scheckziehung an Kontoinhaber</td>
+			<td>4 = Zahlung gegen Lagitimation</td>
+			<td>1 = alle Entgelte z.L Kontoinhaber</td>
+			<td rowspan="2">(Ohne Weisung wird das zu belastende Konto angesprochen)</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td>2 = alle Entgelte z.L Begunstigten</td>
+		</tr>
+		<tr class="br1">
+			<td colspan="4"></td>
+		</tr>
+		<tr>
+			<td rowspan="2">Erfasst von</td>
+			<td colspan="3"></td>
+		</tr>
+		<tr>
+			<td colspan="3">Name, Abteilung/GS, Tel,Nr.</td>
+		</tr>
+		<tr id="sp2">
+			<td colspan="4"></td>
+		</tr>
+		<tr id="sp3">
+			<td colspan="2">Datum</td>
+			<td colspan="2">GEPRUFT</td>
+		</tr>
+	</table>
+</body>
+</html>

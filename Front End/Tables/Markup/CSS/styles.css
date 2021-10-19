@@ -1,0 +1,31 @@
+table, th,td {
+	border:1px solid grey;
+	border-collapse: collapse;
+	width: 1150px;
+	margin: auto;
+	color: grey;
+}
+th {
+	text-align: left;
+	font-weight: 400;
+}
+th,td {
+	padding: 10px;
+}
+#sp td {
+	padding: 20px;
+}
+#sp2 td {
+	padding: 40px;
+	border-left-color:white;
+	border-right-color: white;
+}
+.br1 td {
+	border-left-color:white;
+	border-right-color: white;
+}
+#sp3 td {
+	border-left-color:white;
+	border-right-color: white;
+	border-bottom-color: white;
+}

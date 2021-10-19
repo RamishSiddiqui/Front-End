@@ -1,0 +1,91 @@
+.a,.b,.c,.d,.e,.f {
+	margin: auto;
+	width: 100px;
+	height: 100px;
+	background-color: rgb(0,124,248);
+	margin-bottom: 10px;
+}
+
+.a:hover,.b:hover,.c:hover,.d:hover,.e:hover {
+	width: 300px;
+}
+
+.a {
+	transition: linear 1s;
+}
+.b {
+	transition: ease 1s;
+}
+.c {
+	transition: ease-in 1s;
+}
+.d {
+	transition: ease-out 1s;
+}
+.e {
+	transition: ease-in-out 1s;
+}
+.f:hover{
+	transform: rotate(90deg);
+}
+.f {
+	transition: linear 1s;
+}
+
+
+#chat-min {
+	height: 30px;
+	width: 250px;
+	background-color: rgb(0,124,248);
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin-right: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+#text {
+	color: white;
+	padding: 8px;
+	box-sizing: border-box;
+	position: absolute;
+	padding-left: 30px;
+	font-family: verdana;
+	font-size: 13px;
+}
+img {
+	height: 20px;
+	width: 27px;
+	padding-top: 6px;
+	position: absolute;
+}
+#chat-max {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	display: none;
+}
+
+#chat-max header {
+	height: 30px;
+	width: 250px;
+	background-color: rgb(0,124,248);
+	margin-right: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+#mess {
+	width: 250px;
+	height: 300px;
+	background-color: rgb(219,219,219);
+}
+textarea {
+	width: 238px;
+	height: 63px;
+	margin-top: 225px;
+	resize: none;
+	padding: 5px;
+	border-color:white;
+	border-top-color: grey;
+	background-color: rgb(219,219,219);
+}
